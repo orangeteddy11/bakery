@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sweeties Inc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">Sweeties Inc</a></h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <div class="nav-menu-desktop">
+                <ul>
+                    <li><a href="pastries.html">Pastries</a></li>
+                    <li><a href="breads.html">Breads</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="login-button">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="nav-icons-desktop">
+            <div id="google_translate_element"></div>
+            <div class="search-bar-desktop">
+                <input type="text" id="search-input-desktop" placeholder="Find your treat...">
+                <i class="fas fa-search" onclick="toggleSearch()"></i> 
+            </div>
+            <div class="cart-count">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">3</span>
+            </div>
+            <i class="fas fa-bars mobile-menu-icon" onclick="openNav()"></i> 
+        </div>
+    </header>
+
+    <main class="about-container">
+        <div class="accessibility-tools">
+            <button onclick="speakContent()">🔊 Read Page</button>
+        </div>
+        
+        <section class="story-section-flow">
+            <h2>Our Story: A Passion for Baking</h2>
+            
+            <div class="story-image-float">
+                <img src="image/jondoe.jpg" alt="Our master baker crafting the perfect loaf">
+                <span class="image-caption">Our master baker crafting the perfect loaf</span>
+            </div>
+            
+            <p>Welcome to our family. We started this bakery with a simple dream: to share the joy of fresh, handmade pastries and breads with our community. Every loaf, every croissant, and every cake is crafted with love and the finest ingredients. We pour our heart into every batch, following traditional methods passed down through generations. Our commitment is simple: quality ingredients, exceptional taste, and a warm welcome every time you visit.</p>
+            <p>Our journey began five years ago in a small kitchen, and now, thanks to our loyal customers, we've grown into a beloved community spot. We believe that the simplest things, like a perfect loaf of bread or a decadent slice of cake, can bring immense joy.</p>
+            <p>Today, we continue to innovate while staying true to our roots, bringing you the best of both traditional and contemporary baking.</p>
+        </section>
+        
+        <section class="mission-section-flow">
+            <h2>Our Mission</h2>
+            <p>To deliver moments of happiness through exceptional baked goods. We are committed to using traditional techniques, sourcing high-quality local ingredients, and providing a warm, welcoming experience for every customer. We strive to be the sweet cornerstone of our neighborhood.</p>
+            <p>We believe in sustainability and community, which is why we partner with local farmers and suppliers whenever possible, reducing our environmental impact while supporting our local economy.</p>
+        </section>
+
+        <section class="team-section-flow">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="image/baker.jpg" alt="Photo of John Doe">
+                    <h4>John Doe</h4>
+                    <p>Founder & Head Baker</p>
+                </div>
+                <div class="team-member">
+                    <img src="image/chef.jpg" alt="Photo of Jane Smith">
+                    <h4>James Smith</h4>
+                    <p>Co-Founder & Pastry Chef</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Sweeties Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

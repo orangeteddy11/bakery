@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sweeties Inc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body class="login-page-body">
+
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">Sweeties Inc</a></h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <div class="nav-menu-desktop">
+                <ul>
+                    <li><a href="pastries.html">Pastries</a></li>
+                    <li><a href="breads.html">Breads</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="login-button">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="nav-icons-desktop">
+            <div id="google_translate_element"></div>
+            
+            <!-- Custom Language Dropdown -->
+            <select class="language-dropdown" onchange="changeLanguage(this.value)">
+                <option value="">🌐 Select Language</option>
+                <option value="en">English</option>
+                <option value="es">Español (Spanish)</option>
+                <option value="fr">Français (French)</option>
+                <option value="de">Deutsch (German)</option>
+                <option value="it">Italiano (Italian)</option>
+                <option value="pt">Português (Portuguese)</option>
+                <option value="zh-CN">中文 (Chinese Simplified)</option>
+                <option value="zh-TW">繁體中文 (Chinese Traditional)</option>
+                <option value="ja">日本語 (Japanese)</option>
+                <option value="ko">한국어 (Korean)</option>
+                <option value="ar">العربية (Arabic)</option>
+                <option value="hi">हिन्दी (Hindi)</option>
+                <option value="ru">Русский (Russian)</option>
+                <option value="nl">Nederlands (Dutch)</option>
+                <option value="sv">Svenska (Swedish)</option>
+                <option value="no">Norsk (Norwegian)</option>
+                <option value="da">Dansk (Danish)</option>
+                <option value="fi">Suomi (Finnish)</option>
+                <option value="pl">Polski (Polish)</option>
+                <option value="tr">Türkçe (Turkish)</option>
+                <option value="th">ไทย (Thai)</option>
+                <option value="vi">Tiếng Việt (Vietnamese)</option>
+                <option value="id">Bahasa Indonesia (Indonesian)</option>
+            </select>
+            
+            <div class="search-bar-desktop">
+                <input type="text" id="search-input-desktop" placeholder="Find your treat...">
+                <i class="fas fa-search" onclick="toggleSearch()"></i> 
+            </div>
+            <div class="cart-count">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">3</span>
+            </div>
+            <i class="fas fa-bars mobile-menu-icon" onclick="openNav()"></i> 
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="accessibility-tools">
+            <button onclick="speakContent()">🔊 Read Page</button>
+        </div>
+        
+        <div class="login-form">
+            <div class="login-icon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <h2>Welcome Back!</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="cta-button">Login</button>
+            </form>
+            <p><a href="#">Forgot your password?</a></p>
+            <p>Don't have an account? <a href="#">Sign up here</a></p>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Sweeties Inc. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

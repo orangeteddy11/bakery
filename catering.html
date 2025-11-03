@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering - Sweeties Inc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">Sweeties Inc</a></h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <div class="nav-menu-desktop">
+                <ul>
+                    <li><a href="pastries.html">Pastries</a></li>
+                    <li><a href="breads.html">Breads</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="login-button">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="nav-icons-desktop">
+            <div class="search-bar-desktop">
+                <input type="text" id="search-input-desktop" placeholder="Find your treat...">
+                <i class="fas fa-search" onclick="toggleSearch()"></i> 
+            </div>
+            <div class="cart-count">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">3</span>
+            </div>
+            <i class="fas fa-bars mobile-menu-icon" onclick="openNav()"></i> 
+        </div>
+    </header>
+
+    <main class="catering-page-container">
+        <div class="accessibility-tools">
+            <button onclick="speakContent()" class="accessibility-btn">🔊 Read Page</button>
+            <div id="google_translate_element"></div>
+        </div>
+        
+        <section class="catering-hero-flow">
+            <h2>Catering for Your Special Events</h2>
+            
+            <div class="catering-hero-image-float">
+                <img src="image/almondcroissant.jpg" alt="A beautiful catering setup with pastries">
+                <span class="image-caption">Elegant catering setup for corporate events</span>
+            </div>
+            
+            <p class="catering-hero-text">From corporate meetings to weddings and birthdays, our delicious pastries, breads, and cakes are the perfect touch for any occasion. Let us handle the details while you enjoy the celebration. We offer flexible packages tailored to your guest count and specific dietary needs, ensuring a smooth and memorable experience.</p>
+            <p class="catering-hero-text">Our catering team works closely with you to create the perfect menu for your event, whether it's an intimate gathering or a large celebration. We pride ourselves on attention to detail and exceptional service.</p>
+        </section>
+
+        <section class="catering-packages">
+            <h3>Our Catering Packages</h3>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <img src="image/chocroissant.jpg" alt="A platter of assorted pastries">
+                    <h4>Pastry Platters</h4>
+                    <p>Assorted croissants, muffins, scones, and tarts, elegantly arranged for a professional or casual setting. Perfect for morning meetings or brunch events.</p>
+                </div>
+                <div class="package-card">
+                    <img src="image/brioche.jpg" alt="A basket of artisanal breads">
+                    <h4>Artisan Bread Baskets</h4>
+                    <p>A variety of our fresh-baked breads, including sourdough, baguettes, and brioche rolls, served with butter and specialty spreads.</p>
+                </div>
+                <div class="package-card">
+                    <img src="image/weddingcake.jpg" alt="A custom-designed celebration cake">
+                    <h4>Custom Celebration Cakes</h4>
+                    <p>Work with our pastry chefs to design a show-stopping cake tailored to your event's theme and flavors. Perfect for weddings, anniversaries, and milestones.</p>
+                </div>
+                <div class="package-card">
+                    <img src="image/customcake.jpg" alt="Dessert table with various sweets">
+                    <h4>Dessert Tables</h4>
+                    <p>Create a stunning dessert display with an assortment of our finest cakes, pastries, and cookies. Perfect for weddings and large celebrations.</p>
+                </div>
+                <div class="package-card">
+                    <img src="image/donut.jpg" alt="Individual dessert portions">
+                    <h4>Individual Desserts</h4>
+                    <p>Perfectly portioned individual desserts like mini tarts, cupcakes, and mousses. Great for events where guests can choose their favorites.</p>
+                </div>
+                <div class="package-card">
+                    <img src="image/cinnamonroll.jpg" alt="Seasonal specialty items">
+                    <h4>Seasonal Specialties</h4>
+                    <p>Celebrate the seasons with our specially curated menus featuring seasonal ingredients and flavors that capture the essence of the time of year.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catering-cta-clean">
+            <p>Ready to plan your event? Contact us for a custom quote!</p>
+            <a href="contact.html" class="cta-button-catering">Get a Quote</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Sweeties Inc. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+</html>

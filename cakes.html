@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes for Every Occasion - Sweeties Inc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">Sweeties Inc</a></h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <div class="nav-menu-desktop">
+                <ul>
+                    <li><a href="pastries.html">Pastries</a></li>
+                    <li><a href="breads.html">Breads</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="login-button">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="nav-icons-desktop">
+            <div id="google_translate_element"></div>
+            <div class="search-bar-desktop">
+                <input type="text" id="search-input-desktop" placeholder="Find your treat...">
+                <i class="fas fa-search" onclick="toggleSearch()"></i> 
+            </div>
+            <div class="cart-count" onclick="viewCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">0</span>
+            </div>
+            <i class="fas fa-bars mobile-menu-icon" onclick="openNav()"></i> 
+        </div>
+    </header>
+
+    <main class="products-container">
+        <div class="accessibility-tools">
+            <button onclick="speakContent()">🔊 Read Page</button>
+        </div>
+        
+        <h2>Our Cakes for Every Occasion</h2>
+        <p class="section-description">Elegant, delicious, and customized to your needs. Perfect for any celebration, from intimate gatherings to grand events.</p>
+        
+        <div class="products-grid">
+            <div class="product-card" data-name="Classic New York Cheesecake" data-price="35.00" data-image="image/cheesecake.jpg">
+                <img src="image/cheesecake.jpg" alt="Classic New York Cheesecake">
+                <h3>Classic New York Cheesecake</h3>
+                <p>Rich, creamy, and smooth cheesecake with a graham cracker crust. Topped with fresh berry compote.</p>
+                <div class="product-price">$35.00</div>
+            </div>
+
+            <div class="product-card" data-name="Chocolate Fudge Cake" data-price="28.00" data-image="image/chocfudge.jpg">
+                <img src="image/chocfudge.jpg" alt="Decadent Chocolate Fudge Cake">
+                <h3>Chocolate Fudge Cake</h3>
+                <p>Three layers of moist chocolate cake with a velvety fudge frosting. A chocolate lover's dream.</p>
+                <div class="product-price">$28.00</div>
+            </div>
+
+            <div class="product-card" data-name="Custom Celebration Cake" data-price="45.00" data-image="image/customcake.jpg">
+                <img src="image/customcake.jpg" alt="Custom Celebration Cake">
+                <h3>Custom Celebration Cakes</h3>
+                <p>Design your perfect cake for any event with our customizable options. Personalize flavors, fillings, and decorations.</p>
+                <div class="product-price">Starting at $45.00</div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Sweeties Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

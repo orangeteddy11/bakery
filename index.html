@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweeties Inc - Artisan Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">Sweeties Inc</a></h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <div class="nav-menu-desktop">
+                <ul>
+                    <li><a href="pastries.html">Pastries</a></li>
+                    <li><a href="breads.html">Breads</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="login-button">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="nav-icons-desktop">
+            <div class="search-bar-desktop">
+                <input type="text" id="search-input-desktop" placeholder="Find your treat...">
+                <i class="fas fa-search" onclick="toggleSearch()"></i> 
+            </div>
+            <div class="cart-count">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">3</span>
+            </div>
+            <i class="fas fa-bars mobile-menu-icon" onclick="openNav()"></i> 
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="accessibility-tools">
+            <button onclick="speakContent()" class="accessibility-btn">🔊 Read Page</button>
+            <div id="google_translate_element"></div>
+        </div>
+
+        <section class="z-row-1">
+            <div class="z-item image-left">
+                <img src="image/almondcroissant.jpg" alt="Freshly baked almond croissants">
+            </div>
+            <div class="z-item text-right">
+                <h2>Our Delicious Pastries</h2>
+                <p>Indulge in our selection of flaky croissants, decadent tarts, and sweet morning buns, all baked fresh daily with the finest ingredients and traditional techniques.</p>
+                <a href="pastries.html" class="cta-button">View Pastries</a>
+            </div>
+        </section>
+
+        <section class="z-row-2">
+            <div class="z-item text-left">
+                <h2>Artisanal Breads</h2>
+                <p>From rustic sourdough to soft brioche, our breads are made with the finest ingredients and a passion for tradition. Each loaf is carefully crafted to perfection.</p>
+                <a href="breads.html" class="cta-button">View Breads</a>
+            </div>
+            <div class="z-item image-right">
+                <img src="image/bred.jpg" alt="Artisan sourdough bread">
+            </div>
+        </section>
+
+        <section class="z-row-3">
+            <div class="z-item image-left">
+                <img src="image/weddingcake.jpg" alt="Elegant wedding celebration cake">
+            </div>
+            <div class="z-item text-right">
+                <h2>Cakes for Every Occasion</h2>
+                <p>Celebrate with our custom-made cakes, perfect for birthdays, weddings, or just a sweet treat. We offer classic flavors and custom designs to make your event special.</p>
+                <a href="cakes.html" class="cta-button">View Cakes</a>
+            </div>
+        </section>
+       
+        <section id="catering" class="catering-section">
+            <h2>Catering for Your Events</h2>
+            <p>Let us handle the sweets and breads for your next gathering. We offer custom catering packages for any size event, from intimate gatherings to large celebrations.</p>
+            <a href="catering.html" class="cta-button">Learn More About Catering</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Sweeties Inc. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+</html>

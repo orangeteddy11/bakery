@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Breads - Sweeties Inc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>  
+    <header class="header">
+        <div class="logo">
+            <h1><a href="index.html">Sweeties Inc</a></h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <div class="nav-menu-desktop">
+                <ul>
+                    <li><a href="pastries.html">Pastries</a></li>
+                    <li><a href="breads.html">Breads</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="login-button">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="nav-icons-desktop">
+            <div id="google_translate_element" class="translate-widget"></div>
+            <div class="search-bar-desktop">
+                <input type="text" id="search-input-desktop" placeholder="Find your treat...">
+                <i class="fas fa-search" onclick="toggleSearch()"></i> 
+            </div>
+            <div class="cart-count" onclick="viewCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">0</span>
+            </div>
+            <i class="fas fa-bars mobile-menu-icon" onclick="openNav()"></i> 
+        </div>
+    </header>
+
+    <main class="products-container">
+        <div class="accessibility-tools">
+            <button onclick="speakContent()">🔊 Read Page</button>
+        </div>
+        
+        <h2>Our Artisan Breads</h2>
+        <p class="section-description">Handcrafted with care, our selection of breads is perfect for any meal. Each loaf is baked fresh daily using traditional methods and the finest ingredients.</p>
+        
+        <div class="products-grid">
+            <div class="product-card" data-name="Sourdough Loaf" data-price="6.00" data-image="image/bred.jpg">
+                <img src="image/bred.jpg" alt="Rustic Sourdough Loaf">
+                <h3>Sourdough Loaf</h3>
+                <p>A classic, crusty sourdough with a tangy flavor and perfect chewy texture. Made with our 50-year-old starter.</p>
+                <div class="product-price">$6.00</div>
+            </div>
+
+            <div class="product-card" data-name="Rosemary Focaccia" data-price="5.50" data-image="image/focacia.jpg">
+                <img src="image/focacia.jpg" alt="Rosemary Focaccia Bread">
+                <h3>Rosemary Focaccia</h3>
+                <p>Soft, olive oil-rich bread topped with fresh rosemary and sea salt. Perfect for dipping or sandwiches.</p>
+                <div class="product-price">$5.50</div>
+            </div>
+
+            <div class="product-card" data-name="Classic Baguette" data-price="3.00" data-image="image/baguette.jpg">
+                <img src="image/baguette.jpg" alt="Classic French Baguette">
+                <h3>Classic Baguette</h3>
+                <p>Crispy on the outside, light and chewy on the inside. The perfect companion for any meal.</p>
+                <div class="product-price">$3.00</div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Sweeties Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
